@@ -1,4 +1,6 @@
 /* Mobile */
-@media screen and (min-width: 420px){
-
+@media screen and (max-width: 420px){
+    .footer__content{
+        width: 90%;
+    }
 }

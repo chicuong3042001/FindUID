@@ -140,7 +140,7 @@
 }
 .footer__content{
     display: flex;
-    width: 90%;
+    width: 100%;
     padding: 40px 0;
     justify-content: space-around;
 }
