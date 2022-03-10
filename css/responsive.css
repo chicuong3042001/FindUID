@@ -1,4 +1,27 @@
 /* Mobile */
+@media screen and (max-width:380px){
+    #content__main ul li{
+        line-height: 23px;
+        list-style: none;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    .footer__content{
+        display: block;
+        width: 100%;
+        padding: 40px 0;
+        text-align: center;
+        line-height: 23px;
+    }
+    .footer__right{
+        margin-top: 15px;
+    }
+    .footer__right ul li:last-child{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
 @media screen and (max-width: 420px){
     .footer__content{
         width: 90%;
