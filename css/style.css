@@ -66,6 +66,7 @@
 #content__main{
     width: 90%;
     margin-top: 10px;
+    /* transition: all 0.5 linear 1; */
 }
 #content__main p{
     line-height: 23px;
@@ -86,8 +87,9 @@
     font-size: 16px;
     width: 100%;
 }
-#content__main form input:active{
+#content__main form input:focus{
     border: 1px solid #3d9afd;
+    outline: none;
 }
 #content__main form .btnSubmit{
     background-color: #007bff;
