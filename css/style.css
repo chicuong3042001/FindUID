@@ -99,6 +99,9 @@
     cursor: pointer;
     border-radius: 8px;
 }
+#content__main form .btnSubmit:active{
+    background-color: #035ec0;
+}
 #content__main form .message{
     margin: 20px 0;
     padding: 10px 20px;
