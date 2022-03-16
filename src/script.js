@@ -27,10 +27,6 @@ function setColor(){
         btnColor.style.backgroundColor = "white";
     }
 }
-function loadColor(_this){
-    debugger;
-    _this.style.backgroundColor = "rgb(211, 206, 206)";
-}
 
 window.onload = function(){ 
     setColor();
