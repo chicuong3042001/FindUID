@@ -1,5 +1,5 @@
 /* Mobile */
-@media screen and (max-width:420px){
+@media screen and (max-width:576px){
     #content__main ul li{
         line-height: 23px;
         list-style: none;
@@ -21,9 +21,109 @@
         align-items: center;
         justify-content: center;
     }
+    .footer__Copyright{
+        display: none;
+    }
+    .header__desktop{
+        display: none;
+    }
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width: 577px) {
+    .copyright{
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    .footer__right h3{
+        margin-top: 10px; 
+    }
+}
+@media screen and (max-width:768px) {
+    .content__four-ways{
+        display: none;
+    }
+}
+@media screen and (max-width:1023px) {
+    .header__desktop{
+        display: none;
+    }
+    
+}
+@media screen and (min-width:1023px) {
+    .copyright{
+        display: none;
+    }
+    .footer__left h3, .footer__right h3{
+        font-size: 20px;
+    }
+    .footer__right ul li a, .footer__left ul li a{
+        font-size: 16px;
+        color: #91a0bd;
+        line-height: 45px; 
+    }
+    .footer__menu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+    }
+    .footer__right h3{
+        margin-top: -3px; 
+    }
+    .header{
+        display: none;
+    }
+    .content__logo{
+        display: none;
+    }
     body{
+        background-color: #f2f3f6;
+    }
+    .content .content__find{
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 40px 0;
+        height: 80px;
+        border-radius: 5px;
+        width: 90%;
+    }
+    .content .content__find button{
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        width: 30%;
+        height: 40px;
+        border: none;
+    }
+    .content .content__find button:first-child{
+        font-size: 12px;
+    }
+    .hr_first{
+        display: none;
+    }
+    #content__main form .message{
+        display: flex;
+        height: 50px;
+        width: 70%;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .content__big--content{
+        background: white;
+        width: 90%;
+        margin-bottom: 40px;
+    }
+    #content__main .CountCheck{
+        font-size: 30px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .footer__right ul li a, .footer__left ul li a{
         font-size: 20px;
     }
 }
+

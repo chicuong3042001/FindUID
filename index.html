@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find UID</title>
+    <title>Find UID - ATP Software</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="shortcut icon" href="./img/favicon-32x32.png">
+    <link rel="shortcut icon" href="./img/fav-find.png">
     <script src="./src/script.js"></script>
+    <link rel="stylesheet" href="./css/fontawesome-free-6.0.0-web/css/all.min.css">
 </head>
 
 <body>
@@ -17,82 +18,215 @@
         <div class="header">
             <h3>Find UID Facebook</h3>
         </div>
-        <div class="content">
-            <div class="content__logo">
-                <img style="width: 200px; height: 60px" src="./img/logo-atpsoftware-500-Copy.png" alt="logo">
+        <div class="header__desktop">
+            <a href="#"><img src="./img/logo-finduid.png" alt="finduid"></a>
+            <a href="#">Tải video Tiktok không logo</a>
+            <a href="#">Tăng follow/like Facebook</a>
+            <a href="#">Tăng traffic website miễn phí</a>
+            <a href="#">Blog</a>
+        </div>
+        <div class="big__content">
+            <div class="content">
+                <div class="content__logo">
+                    <img style="width: 200px; height: 60px" src="./img/logo-atpsoftware-500-Copy.png" alt="logo">
+                </div>
+                <div class="content__find">
+                    <button id="btnFindUID" class="btn" onclick="showFindUID(this)"><img
+                            style="width:35px;margin-right: 2px;"
+                            src="https://img.icons8.com/color/48/000000/facebook-new.png" /> Tìm UID Facebook từ link
+                        Facebook</button>
+                    <button id="btnFindFBfromPhone" class="btn" onclick="showFindFBfromPhone(this)"><img
+                            style="width:30px;margin-right: 5px;"
+                            src="https://img.icons8.com/flat-round/64/000000/phone.png" /> Tìm Facebook từ số điện
+                        thoại</button>
+                    <button id="btnFindFBfromEmail" class="btn" onclick="showFindFBfromEmail(this)"><img
+                            style="width:30px;margin-right: 3px;"
+                            src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-email-notifications-justicon-flat-justicon.png" />
+                        Tìm Facebook từ Email</button>
+                </div>
+                <hr class="hr_first">
+                <div class="content__big--content">
+                    <div id="content__main">
+                        <h3>Tìm UID Facebook từ link Facebook</h3>
+                        <p>Bằng cách nhập dữ liệu trên hệ thống tìm kiếm của chúng tôi, bạn đã đồng ý với <a
+                                style="text-decoration: none;color: rgb(32, 32, 250);" href="#">Điều khoản sử dụng</a>
+                            và <a style="text-decoration: none;color:rgb(32, 32, 250);" href="#">Chính sách bảo mật</a>
+                            của chúng tôi.</p>
+                        <form>
+                            <input type="text" placeholder="Nhập link Facebook...">
+                            <button class="btnSubmit"><img style="width:20px;margin-right: 5px;"
+                                    src="https://img.icons8.com/external-colours-bomsymbols-/91/000000/external-find-digital-design-colors-set-1-colours-bomsymbols--2.png" />Tìm
+                                UID Facebook</button>
+                            <p class="message">Kết quả sẽ xuất hiện tại đây!</p>
+                        </form>
+                        <b style="font-size: 18px">Định dạng link Facebook được hệ thống chấp nhận</b>
+                        <ul>
+                            <li>&#8226; https://www.facebook.com/daibuiatp</li>
+                            <li>&#8226; https://m.facebook.com/daibuiatp</li>
+                            <li>&#8226; https://www.facebook.com/profile.php?id=1000000025812613</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="content_intro">
+                        <h3>UID Facebook là gì?</h3>
+                        <p>UID Facebook là một dãy mã số được Facebook tự động gán vào để quản lý các hoạt động một cách
+                            tự
+                            động
+                            và thống nhất. Cụ thể,
+                            bất cứ một hoạt động nào trên Facebook đều sẽ gán một mã số riêng biệt và không bị trùng
+                            lặp, mã
+                            số
+                            này là không thể thay đổi.
+                        </p>
+                        <h3>Lợi ích khi sử dụng FindUID</h3>
+                        <p class="content_intro--title">1. Xác thực thông tin khách hàng</p>
+                        <p>Biết được Facebook cá nhân của khách hàng sẽ nắm bắt thêm nhiều thông tin của họ và dễ dàng
+                            chốt
+                            sales hơn.
+                            Ngoài ra cũng có xác thực xem thông tin của khách hàng có trùng khớp với dữ liệu đã được
+                            cung
+                            cấp
+                            hay không.
+                        </p>
+                        <p class="content_intro--title">2. Dễ dàng chăm sóc khách hàng đa kênh</p>
+                        <p>
+                            Sau khi kết nối khách hàng trên Zalo, bạn cũng có thể gửi lời mời kết bạn với khách hàng
+                            trên
+                            Facebook để có thể dễ dàng trao đổi với khách hàng hơn.
+                        </p>
+                        <p class="content_intro--title">3. Tạo ra trải nghiệm "WOW"</p>
+                        <p>Khách hàng sẽ cảm thấy "WOW" với cách làm việc cực kì chuyên nghiệp của bạn. Biết khách hàng
+                            là
+                            ai
+                            trên Facebook
+                            là minh chứng cho việc chúng ta rất quan tâm đến khách hàng của mình.
+                        </p>
+                    </div>
+                </div>
+
             </div>
-            <div class="content__find">
-                <button id="btnFindUID" class="btn" onclick="showFindUID(this)"><img style="width:35px;margin-right: 2px;"src="https://img.icons8.com/color/48/000000/facebook-new.png"/> Tìm UID Facebook từ link Facebook</button>
-                <button id="btnFindFBfromPhone" class="btn" onclick="showFindFBfromPhone(this)"><img style="width:30px;margin-right: 5px;" src="https://img.icons8.com/flat-round/64/000000/phone.png"/> Tìm Facebook từ số điện
-                    thoại</button>
-                <button id="btnFindFBfromEmail" class="btn" onclick="showFindFBfromEmail(this)"><img style="width:30px;margin-right: 3px;" src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-email-notifications-justicon-flat-justicon.png"/> Tìm Facebook từ Email</button>
-            </div>
-            <hr>
-            <div id="content__main">
-                <h3>Tìm UID Facebook từ link Facebook</h3>
-                <p>Bằng cách nhập dữ liệu trên hệ thống tìm kiếm của chúng tôi, bạn đã đồng ý với <a
-                        style="text-decoration: none;color: rgb(32, 32, 250);" href="#">Điều khoản sử dụng</a> và <a
-                        style="text-decoration: none;color:rgb(32, 32, 250);" href="#">Chính sách bảo mật</a> của chúng
-                    tôi.</p>
-                <form>
-                    <input type="text" placeholder="Nhập link Facebook...">
-                    <button class="btnSubmit"><img style="width:20px;margin-right: 5px;"src="https://img.icons8.com/external-colours-bomsymbols-/91/000000/external-find-digital-design-colors-set-1-colours-bomsymbols--2.png"/>Tìm UID Facebook</button>
-                    <p class="message">Kết quả sẽ xuất hiện tại đây!</p>
-                </form>
-                <b style="font-size: 18px">Định dạng link Facebook được hệ thống chấp nhận</b>
-                <ul>
-                    <li>&#8226; https://www.facebook.com/daibuiatp</li>
-                    <li>&#8226; https://m.facebook.com/daibuiatp</li>
-                    <li>&#8226; https://www.facebook.com/profile.php?id=1000000025812613</li>
-                </ul>
-            </div>
-            <hr>
-            <div class="content_intro">
-                <h3>UID Facebook là gì?</h3>
-                <p>UID Facebook là một dãy mã số được Facebook tự động gán vào để quản lý các hoạt động một cách tự động
-                    và thống nhất. Cụ thê,
-                    bất cứ một hoạt động nào trên Facebook đều sẽ gán một mã số riêng biệt và không bị trùng lặp, mã số
-                    này là không thể thay đổi.
-                </p>
-                <h3>Lợi ích khi sử dụng FindUID</h3>
-                <p class="content_intro--title">1. Xác thực thông tin khách hàng</p>
-                <p>Biết được Facebook cá nhân của khách hàng sẽ nắm bắt thêm nhiều thông tin của họ và dễ dàng chốt
-                    sales hơn
-                    Ngoài ra cũng có xác thực xem thông tin của khách hàng có trùng khớp với dữ liệu đã được cung cấp
-                    hay không.
-                </p>
-                <p class="content_intro--title">2. Dễ dàng chăm sóc khách hàng đa kênh</p>
-                <p>
-                    Sau khi kết nối khách hàng trên Zalo, bạn cũng có thể gửi lời mời kết bạn với khách hàng trên
-                    Facebook để có thể dễ dàng trao đổi với khách hàng hơn.
-                </p>
-                <p class="content_intro--title">3. Tạo ra trải nghiệm "WOW"</p>
-                <p>Khách hàng sẽ cảm thấy "WOW" với cách làm việc cực kì chuyên nghiệp của bạn. Biết khách hàng là ai
-                    trên Facebook
-                    là minh chứng cho việc chúng ta rất quan tâm đến khách hàng của mình.
-                </p>
+            <div class="sale__coupon">
+                <div class="sale__coupon--content">
+                    <div class="sale__coupon--content-main">
+                        <div class="content__item">
+                            <h6>Mã giảm giá Simple Facebook PRO giảm 10-50%</h6>
+                            <p>Phần mềm nuôi nick, kết bạn Facebook full 5000 bạn bè nhanh chóng</p>
+                            <a href="#">Lấy mã<i class="fas fa-share"></i></a>
+                        </div>
+                        <div class="content__image">
+                            <img src="./img/fbpro.jpg" alt="">
+                        </div>
+
+                    </div>
+                    <div class="sale__coupon--content-main">
+                        <div class="content__item">
+                            <h6>Mã giảm giá Simple Ads giảm 10-50%</h6>
+                            <p>Phần mềm hỗ trợ chạy quảng cáo Facebook theo tệp UID</p>
+                            <a href="#">Lấy mã<i class="fas fa-share"></i></a>
+                        </div>
+                        <div class="content__image">
+                            <img src="./img/simpleads.jpg" alt="ads">
+                        </div>
+                    </div>
+                    <div class="sale__coupon--content-main">
+                        <div class="content__item">
+                            <h6>Mã giảm giá Simple Zalo giảm 10-50%</h6>
+                            <p>Phần mềm Marketing 0đ trên Zalo, kết nối & chăm sóc khách hàng tiềm năng tự động</p>
+                            <a href="#">Lấy mã<i class="fas fa-share"></i></a>
+                        </div>
+                        <div class="content__image">
+                            <img src="./img/simplezalo.jpg" alt="zalo">
+                        </div>
+                    </div>
+                    <div class="sale__coupon--content-main">
+                        <div class="content__item">
+                            <h6>Mã giảm giá Combo ATP giảm 10-50%</h6>
+                            <p>Tổng hợp 15 phần mềm Marketing trên nhiều nền tảng của ATP Software</p>
+                            <a href="#">Lấy mã<i class="fas fa-share"></i></a>
+                        </div>
+                        <div class="content__image">
+                            <img src="./img/combo.jpg" alt="comboatp">
+                        </div>
+                    </div>
+                    <div class="sale__coupon--content-main">
+                        <div class="content__item">
+                            <h6>Mã giảm giá Simple Seeding giảm 10-50%</h6>
+                            <p>Phần mềm tăng like, tăng comment, tăng follow, tăng like page Facebook</p>
+                            <a href="#">Lấy mã<i class="fas fa-share"></i></a>
+                        </div>
+                        <div class="content__image">
+                            <img src="./img/simpleseeding.jpg" alt="seeding">
+                        </div>
+                    </div>
+                    <div class="sale__coupon--content-main">
+                        <div class="content__item">
+                            <h6>Mã giảm giá Simple Page giảm 10-50%</h6>
+                            <p>Công cụ hỗ trợ thiết kế Landingpage chạy quảng cáo Facebook & Tiktok</p>
+                            <a href="#">Lấy mã<i class="fas fa-share"></i></a>
+                        </div>
+                        <div class="content__image">
+                            <img src="./img/simplepage.png" alt="simplepage">
+                        </div>
+                    </div>
+                    <div class="sale__coupon--content-main">
+                        <div class="content__item">
+                            <h6>Mã giảm giá Combo ATP Mobile giảm 10-50%</h6>
+                            <p>Tổng hợp phần mềm ATP Software trên điện thoại</p>
+                            <a href="#">Lấy mã<i class="fas fa-share"></i></a>
+                        </div>
+                        <div class="content__image">
+                            <img src="./img/all-in-one-mobile.png" alt="aio">
+                        </div>
+                    </div>
+                    <div class="sale__coupon--content-main">
+                        <div class="content__item">
+                            <h6>Mã giảm giá Simple Shop giảm 10-50%</h6>
+                            <p>Phần mềm thiết kế Website/ Webshop chỉ trong 3 bước thao tác, tích hợp thanh toán online
+                                và vận chuyển tiện lợi</p>
+                            <a href="#">Lấy mã<i class="fas fa-share"></i></a>
+                        </div>
+                        <div class="content__image">
+                            <img src="./img/simpleshop.jpg" alt="simpleshop">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
         <div class="footer">
             <div class="footer__content">
-                <div class="footer__left">
-                    <h3>GIẢI PHÁP MARKETING</h3>
-                    <ul>
-                        <li><a href="#">Phần mềm quảng cáo FB</a></li>
-                        <li><a href="#">Phần mềm kết bạn FB</a></li>
-                        <li><a href="#">Phần mềm đăng bài Fanpage</a></li>
-                        <li><a href="#">Phần mềm kết bạn Zalo</a></li>
-                    </ul>
+                <div class="footer__Copyright">
+                    <div class="footer__logo">
+                        <img style="width: 300px; height: 100px" src="./img/logo-atpsoftware-footer.png" alt="logo">
+                        <p>Finduid.com thuộc quyền sở hữu của ATP Software</p>
+                    </div>
+                    <hr>
+                    <div class="footer__desktop-copyright">
+                        <img src="https://images.dmca.com/Badges/dmca-badge-w250-5x1-03.png?ID=f9915814-7d25-4e0a-9c17-ce093c77f828"
+                            alt="DMCA.com Protection Status">
+                        <p>&copy; Copyright 2018 ATPSoftware, All Rights Reserved</p>
+                    </div>
                 </div>
-                <div class="footer__right">
-                    <h3>LIÊN KẾT</h3>
-                    <ul>
-                        <li><a href="#">Công cụ SEO miễn phí</a></li>
-                        <li><a href="#">Công cụ tăng like FB miễn phí</a></li>
-                        <li><a href="#">Thiết kế webshop miễn phí</a></li>
-                        <li><a href="#">Tải Tiktok không logo</a><img style="width: 40px;height: 40px;"
-                                src="./img/tiktok-logo.png"></li>
-                    </ul>
+                <div class="footer__menu">
+                    <div class="footer__left">
+                        <h3>GIẢI PHÁP MARKETING</h3>
+                        <ul>
+                            <li><a href="#">Phần mềm quảng cáo FB</a></li>
+                            <li><a href="#">Phần mềm kết bạn FB</a></li>
+                            <li><a href="#">Phần mềm đăng bài Fanpage</a></li>
+                            <li><a href="#">Phần mềm kết bạn Zalo</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__right">
+                        <h3>LIÊN KẾT</h3>
+                        <ul>
+                            <li><a href="#">Công cụ SEO miễn phí</a></li>
+                            <li><a href="#">Công cụ tăng like FB miễn phí</a></li>
+                            <li><a href="#">Thiết kế webshop miễn phí</a></li>
+                            <li><a href="#">Tải Tiktok không logo</a><img style="width: 40px;height: 40px;"
+                                    src="./img/tiktok-logo.png"></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
