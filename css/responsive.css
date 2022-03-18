@@ -57,7 +57,12 @@
     .sale__coupon{
         display: none;
     }
-    
+    .content .content__find{
+        box-shadow: none;
+    }
+    .content__big--content{
+        box-shadow: none;
+    }
 }
 @media screen and (min-width:1023px) {
     .copyright{
@@ -139,6 +144,19 @@
         height: 60px;
     }
 }
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #007bff;
+    }
+  
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(58, 89, 170);
+    }
 @media screen and (min-width: 1200px){
     .footer__right ul li a, .footer__left ul li a{
         font-size: 20px;
