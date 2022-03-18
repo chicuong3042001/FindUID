@@ -72,10 +72,10 @@ chúng tôi.</p>
 <hr>
 <h3 style="text-decoration:underline; margin-top:35px">*Mẹo khai thác số điện thoại hiệu quả</h3>
 <div class="four_ways">
-    <a href="#">1. Cách tìm Facebook nhanh bằng SĐT và lấy ID Facebook nhanh chóng tại finduid.com</a>
-    <a href="#">2. Hướng dẫn kết bạn full 2k bạn không cần SĐT</a>
-    <a href="#">3. Vì sao nên bán hàng trên ZALO? Làm thế nào để full 2k bạn ZALO?</a>
-    <a href="#">4. Kinh nghiệm bán TRĂM ĐƠN HÀNG online trên ZALO cá nhân - Bí mật chưa được tiết lộ</a>
+    <a href="https://atpsoftware.vn/cach-tim-facebook-nhanh-bang-sdt-va-lay-id-facebook-nhanh-chong-tai-finduid-com.html">1. Cách tìm Facebook nhanh bằng SĐT và lấy ID Facebook nhanh chóng tại finduid.com</a>
+    <a href="https://atpsoftware.vn/huong-dan-ket-ban-full-2k-ban-zalo-khong-can-sdt.html">2. Hướng dẫn kết bạn full 2k bạn không cần SĐT</a>
+    <a href="https://atpsoftware.vn/vi-sao-nen-ban-hang-tren-zalo-lam-the-nao-de-full-2000-ban-zalo.html">3. Vì sao nên bán hàng trên ZALO? Làm thế nào để full 2k bạn ZALO?</a>
+    <a href="https://atpsoftware.vn/vi-sao-nen-ban-hang-tren-zalo-lam-the-nao-de-full-2000-ban-zalo.html">4. Kinh nghiệm bán TRĂM ĐƠN HÀNG online trên ZALO cá nhân - Bí mật chưa được tiết lộ</a>
 </div>
 </div>
 `
