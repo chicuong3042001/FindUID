@@ -40,10 +40,22 @@ window.onload = function(){
 
 let htmlFindUID = `
 <h3>Tìm UID Facebook từ link Facebook</h3>
-<p>Bằng cách nhập dữ liệu trên hệ thống tìm kiếm của chúng tôi, bạn đã đồng ý với <a style="text-decoration: none;color: rgb(32, 32, 250);" href="#">Điều khoản sử dụng</a> và <a style="text-decoration: none;color:rgb(32, 32, 250);" href="#">Chính sách bảo mật</a> của chúng tôi.</p>
+<p class="P_desktop">Bằng cách nhập dữ liệu trên hệ thống tìm kiếm của chúng tôi, bạn đã đồng ý
+                            với <a style="text-decoration: none;color: rgb(32, 32, 250);"
+                                href="https://atpsoftware.vn/dieu-khoan-su-dung.html">Điều khoản sử dụng</a>
+                            và <a style="text-decoration: none;color:rgb(32, 32, 250);"
+                                href="https://atpsoftware.vn/chinh-sach-bao-mat.html">Chính sách bảo mật</a>
+                            của chúng tôi.</p>
+<p class="P_mobile" style="font-weight: 600;">Nhập link facebook bạn muốn tra cứu UID vào đây:</p>
 <form>
-    <input type="text" placeholder="Nhập link Facebook...">
+    <input type="text" placeholder="https://www.facebook.com/username">
     <button class="btnSubmit"><img style="width:20px;margin-right: 5px;"src="https://img.icons8.com/external-colours-bomsymbols-/91/000000/external-find-digital-design-colors-set-1-colours-bomsymbols--2.png"/>Tìm UID Facebook</button>
+    <p class="P_mobile">Bằng cách nhập dữ liệu trên hệ thống tìm kiếm của chúng tôi, bạn đã đồng ý
+                            với <a style="text-decoration: none;color: rgb(32, 32, 250);"
+                                href="https://atpsoftware.vn/dieu-khoan-su-dung.html">Điều khoản sử dụng</a>
+                            và <a style="text-decoration: none;color:rgb(32, 32, 250);"
+                                href="https://atpsoftware.vn/chinh-sach-bao-mat.html">Chính sách bảo mật</a>
+                            của chúng tôi.</p>
     <p class="message">Kết quả sẽ xuất hiện tại đây!</p>
 </form>
 <b style="font-size: 18px">Định dạng link Facebook được hệ thống chấp nhận</b>
@@ -56,15 +68,24 @@ let htmlFindUID = `
 
 let htmlFindFBfromPhone = `
 <h3>Tìm Facebook từ số điện thoại</h3>
-<p>Bằng cách nhập dữ liệu trên hệ thống tìm kiếm của chúng tôi, bạn đã đồng ý với 
-<a style="text-decoration: none;color: rgb(32, 32, 250);" href="#">Điều khoản sử dụng</a> và 
-<a style="text-decoration: none;color:rgb(32, 32, 250);" href="#">Chính sách bảo mật</a> của
-chúng tôi.</p>
+<p class="P_desktop">Bằng cách nhập dữ liệu trên hệ thống tìm kiếm của chúng tôi, bạn đã đồng ý
+                            với <a style="text-decoration: none;color: rgb(32, 32, 250);"
+                                href="https://atpsoftware.vn/dieu-khoan-su-dung.html">Điều khoản sử dụng</a>
+                            và <a style="text-decoration: none;color:rgb(32, 32, 250);"
+                                href="https://atpsoftware.vn/chinh-sach-bao-mat.html">Chính sách bảo mật</a>
+                            của chúng tôi.</p>
+<p class="P_mobile" style="font-weight: 600;">Nhập số điện thoại bạn muốn tìm Facebook vào đây:</p>
 <form>
-    <input type="text" placeholder="Nhập số điện thoại vào đây...">
+    <input type="text" placeholder="+84888888888 hoặc 0888888888">
     <button class="btnSubmit"><img style="width:20px;margin-right: 5px;"
     src="https://img.icons8.com/external-colours-bomsymbols-/91/000000/external-find-digital-design-colors-set-1-colours-bomsymbols--2.png" />Tìm
     Facebook</button>
+    <p class="P_mobile">Bằng cách nhập dữ liệu trên hệ thống tìm kiếm của chúng tôi, bạn đã đồng ý
+                            với <a style="text-decoration: none;color: rgb(32, 32, 250);"
+                                href="https://atpsoftware.vn/dieu-khoan-su-dung.html">Điều khoản sử dụng</a>
+                            và <a style="text-decoration: none;color:rgb(32, 32, 250);"
+                                href="https://atpsoftware.vn/chinh-sach-bao-mat.html">Chính sách bảo mật</a>
+                            của chúng tôi.</p>
 <p class="message">Kết quả sẽ xuất hiện tại đây!</p>
 </form>
 <p class="CountCheck">Số lượt check còn lại trong ngày:  <strong style="color:red">30</strong></p>
@@ -81,10 +102,22 @@ chúng tôi.</p>
 `
 let htmlFindFBfromEmail = `
 <h3>Tìm Facebook từ Email</h3>
-<p>Bằng cách nhập dữ liệu trên hệ thống tìm kiếm của chúng tôi, bạn đã đồng ý với <a style="text-decoration: none;color: rgb(32, 32, 250);" href="#">Điều khoản sử dụng</a> và <a style="text-decoration: none;color:rgb(32, 32, 250);" href="#">Chính sách bảo mật</a> của chúng tôi.</p>
+<p class="P_desktop">Bằng cách nhập dữ liệu trên hệ thống tìm kiếm của chúng tôi, bạn đã đồng ý
+                            với <a style="text-decoration: none;color: rgb(32, 32, 250);"
+                                href="https://atpsoftware.vn/dieu-khoan-su-dung.html">Điều khoản sử dụng</a>
+                            và <a style="text-decoration: none;color:rgb(32, 32, 250);"
+                                href="https://atpsoftware.vn/chinh-sach-bao-mat.html">Chính sách bảo mật</a>
+                            của chúng tôi.</p>
+<p class="P_mobile" style="font-weight: 600;">Nhập Email bạn muốn tìm Facebook vào đây:</p>
 <form>
-    <input type="text" placeholder="Nhập Email vào đây...">
+    <input type="text" placeholder="atpsoftware@gmail.com">
     <button class="btnSubmit"><img style="width:20px;margin-right: 5px;"src="https://img.icons8.com/external-colours-bomsymbols-/91/000000/external-find-digital-design-colors-set-1-colours-bomsymbols--2.png"/>Tìm Facebook</button>
+    <p class="P_mobile">Bằng cách nhập dữ liệu trên hệ thống tìm kiếm của chúng tôi, bạn đã đồng ý
+                            với <a style="text-decoration: none;color: rgb(32, 32, 250);"
+                                href="https://atpsoftware.vn/dieu-khoan-su-dung.html">Điều khoản sử dụng</a>
+                            và <a style="text-decoration: none;color:rgb(32, 32, 250);"
+                                href="https://atpsoftware.vn/chinh-sach-bao-mat.html">Chính sách bảo mật</a>
+                            của chúng tôi.</p>
     <p class="message">Kết quả sẽ xuất hiện tại đây!</p>
 </form>
 <p class="CountCheck">Số lượt check còn lại trong ngày: <strong style="color:red">30</strong></p>

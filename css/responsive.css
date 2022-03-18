@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 @media screen and (max-width:576px){
     #content__main ul li{
         line-height: 23px;
@@ -29,7 +30,9 @@
     #content__main .CountCheck{
         font-size: 20px;
     }
-
+    .P_mobile{
+        display: none;
+    }
 }
 @media screen and (min-width: 577px) {
     .copyright{
@@ -63,6 +66,7 @@
     .content__big--content{
         box-shadow: none;
     }
+    
 }
 @media screen and (min-width:1023px) {
     .copyright{
@@ -143,7 +147,6 @@
         text-align: center;
         height: 60px;
     }
-}
     /* width */
     ::-webkit-scrollbar {
         width: 10px;
@@ -157,6 +160,19 @@
     ::-webkit-scrollbar-thumb:hover {
         background: rgb(58, 89, 170);
     }
+    #content__main h3:first-child{
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+    #content__main ul li{
+        line-height: 32px;
+        font-size: 18px;
+    }
+    .P_desktop{
+        display: none;
+    }
+}   
 @media screen and (min-width: 1200px){
     .footer__right ul li a, .footer__left ul li a{
         font-size: 20px;
@@ -164,5 +180,6 @@
     .four_ways a{
         font-size: 20px;
     }
+    
 }
 
