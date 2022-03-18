@@ -228,6 +228,7 @@
 .header__desktop a{
     text-decoration: none;
     color: #91a0bd;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 .header__desktop a:hover{
     color: white;
