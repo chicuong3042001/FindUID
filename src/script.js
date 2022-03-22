@@ -31,9 +31,6 @@ function setColor(){
     }
 }
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
 async function findId(params) {
     await new Promise(function(resolve, reject) {
         var http = new XMLHttpRequest();
@@ -62,6 +59,7 @@ async function findId(params) {
         http.send();
     });
 }
+
 async function myFunction() {
     var params = document.querySelector("#content__main form input").value;
     if (!params) {
@@ -73,32 +71,6 @@ async function myFunction() {
             $("#loading-data").hide();
         }, 0);
     }
-}
-function testFunc(){
-    var http = new XMLHttpRequest();
-    var url = 'test.php';
-    var params = document.querySelector("#content__main form input").value;
-    if (!params) {
-        alert("Vui lòng nhập link Facebook cần tìm UID");
-    } else {
-        http.onreadystatechange = function () {
-            //Call a function when the state changes.
-            if (http.readyState == 4 && http.status == 200) {
-                var FBid = JSON.parse(this.responseText);
-                if (FBid.error) {
-                    document.querySelector("#content__main form .message").style.color = "#d30909";
-                    document.querySelector("#content__main form .message").style.backgroundColor = "#ffc4c4";
-                    document.querySelector("#content__main form .message").innerHTML = FBid.error;
-                } else {
-                    document.querySelector("#content__main form .message").innerHTML = "" + FBid.id;
-                    document.querySelector("#content__main form .message").style.color = "#0055d3";
-                    document.querySelector("#content__main form .message").style.backgroundColor = "#d3e0ff";
-                }
-            }
-        }
-    }
-    http.open('GET', url + "?link=" + params, false);
-    http.send();
 }
 
 window.onload = function(){ 
@@ -121,7 +93,7 @@ let htmlFindUID = `
 <p class="P_mobile" style="font-weight: 600;">Nhập link Facebook bạn muốn tra cứu UID vào đây:</p>
 <form>
     <input type="text" placeholder="https://www.facebook.com/username">
-    <button class="btnSubmit" type="submit" onclick="myFunction()"><img style="width:20px;margin-right: 5px;"src="https://img.icons8.com/external-colours-bomsymbols-/91/000000/external-find-digital-design-colors-set-1-colours-bomsymbols--2.png"/>Tìm UID Facebook</button>
+    <a class="btnSubmit" type="submit" onclick="myFunction()" href="#"><img style="width:20px;margin-right: 5px;"src="https://img.icons8.com/external-colours-bomsymbols-/91/000000/external-find-digital-design-colors-set-1-colours-bomsymbols--2.png"/>Tìm UID Facebook</a>
     <p class="P_mobile">Bằng cách nhập dữ liệu trên hệ thống tìm kiếm của chúng tôi, bạn đã đồng ý
                             với <a style="text-decoration: none;color: rgb(32, 32, 250);"
                                 href="https://atpsoftware.vn/dieu-khoan-su-dung.html">Điều khoản sử dụng</a>
@@ -148,9 +120,9 @@ let htmlFindFBfromPhone = `
 <p class="P_mobile" style="font-weight: 600;">Nhập số điện thoại bạn muốn tìm Facebook vào đây:</p>
 <form>
     <input type="text" placeholder="+84888888888 hoặc 0888888888">
-    <button class="btnSubmit"><img style="width:20px;margin-right: 5px;"
+    <a class="btnSubmit" type="submit" href="#"><img style="width:20px;margin-right: 5px;"
     src="https://img.icons8.com/external-colours-bomsymbols-/91/000000/external-find-digital-design-colors-set-1-colours-bomsymbols--2.png" />Tìm
-    Facebook</button>
+    Facebook</a>
     <p class="P_mobile">Bằng cách nhập dữ liệu trên hệ thống tìm kiếm của chúng tôi, bạn đã đồng ý
                             với <a style="text-decoration: none;color: rgb(32, 32, 250);"
                                 href="https://atpsoftware.vn/dieu-khoan-su-dung.html">Điều khoản sử dụng</a>
@@ -182,7 +154,7 @@ let htmlFindFBfromEmail = `
 <p class="P_mobile" style="font-weight: 600;">Nhập Email bạn muốn tìm Facebook vào đây:</p>
 <form>
     <input type="text" placeholder="atpsoftware@gmail.com">
-    <button class="btnSubmit"><img style="width:20px;margin-right: 5px;"src="https://img.icons8.com/external-colours-bomsymbols-/91/000000/external-find-digital-design-colors-set-1-colours-bomsymbols--2.png"/>Tìm Facebook</button>
+    <a class="btnSubmit" type="submit" href="#"><img style="width:20px;margin-right: 5px;"src="https://img.icons8.com/external-colours-bomsymbols-/91/000000/external-find-digital-design-colors-set-1-colours-bomsymbols--2.png"/>Tìm Facebook</a>
     <p class="P_mobile">Bằng cách nhập dữ liệu trên hệ thống tìm kiếm của chúng tôi, bạn đã đồng ý
                             với <a style="text-decoration: none;color: rgb(32, 32, 250);"
                                 href="https://atpsoftware.vn/dieu-khoan-su-dung.html">Điều khoản sử dụng</a>
