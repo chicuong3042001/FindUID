@@ -46,6 +46,10 @@ async function findId(params) {
                     document.querySelector("#content__main form .message").style.color = "#d30909";
                     document.querySelector("#content__main form .message").style.backgroundColor = "#ffc4c4";
                     document.querySelector("#content__main form .message").innerHTML = FBid.error;
+                } else if (FBid.id == null){
+                    document.querySelector("#content__main form .message").style.color = "#d30909";
+                    document.querySelector("#content__main form .message").style.backgroundColor = "#ffc4c4";
+                    document.querySelector("#content__main form .message").innerHTML = "Hệ thống không hỗ trợ link Facebook này.";
                 } else {
                     document.querySelector("#content__main form .message").innerHTML = "" + FBid.id;
                     document.querySelector("#content__main form .message").style.color = "#0055d3";
