@@ -31,25 +31,93 @@ function setColor(){
     }
 }
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+async function findId(params) {
+    await new Promise(function(resolve, reject) {
+        var http = new XMLHttpRequest();
+        var url = 'test.php';
+        http.onreadystatechange = function () {
+            //Call a function when the state changes.
+            if (http.readyState == 4 && http.status == 200) {
+                var FBid = JSON.parse(this.responseText);
+                if (FBid.error) {
+                    document.querySelector("#content__main form .message").style.color = "#d30909";
+                    document.querySelector("#content__main form .message").style.backgroundColor = "#ffc4c4";
+                    document.querySelector("#content__main form .message").innerHTML = FBid.error;
+                } else {
+                    document.querySelector("#content__main form .message").innerHTML = "" + FBid.id;
+                    document.querySelector("#content__main form .message").style.color = "#0055d3";
+                    document.querySelector("#content__main form .message").style.backgroundColor = "#d3e0ff";
+                }
+                resolve();
+            }
+        }
+        http.open('GET', url + "?link=" + params, false);
+        http.send();
+    });
+}
+async function myFunction() {
+    var params = document.querySelector("#content__main form input").value;
+    if (!params) {
+        alert("Vui lòng nhập link Facebook cần tìm UID");
+    } else {
+        $("#loading-data").show();
+        setTimeout(async () => {
+            await findId(params);
+            $("#loading-data").hide();
+        }, 0);
+    }
+}
+function testFunc(){
+    var http = new XMLHttpRequest();
+    var url = 'test.php';
+    var params = document.querySelector("#content__main form input").value;
+    if (!params) {
+        alert("Vui lòng nhập link Facebook cần tìm UID");
+    } else {
+        http.onreadystatechange = function () {
+            //Call a function when the state changes.
+            if (http.readyState == 4 && http.status == 200) {
+                var FBid = JSON.parse(this.responseText);
+                if (FBid.error) {
+                    document.querySelector("#content__main form .message").style.color = "#d30909";
+                    document.querySelector("#content__main form .message").style.backgroundColor = "#ffc4c4";
+                    document.querySelector("#content__main form .message").innerHTML = FBid.error;
+                } else {
+                    document.querySelector("#content__main form .message").innerHTML = "" + FBid.id;
+                    document.querySelector("#content__main form .message").style.color = "#0055d3";
+                    document.querySelector("#content__main form .message").style.backgroundColor = "#d3e0ff";
+                }
+            }
+        }
+    }
+    http.open('GET', url + "?link=" + params, false);
+    http.send();
+}
+
 window.onload = function(){ 
     setColor();
     let btnFindUID = document.getElementById('btnFindUID');
     btnFindUID.style.backgroundColor = "rgb(58, 89, 170)";
     btnFindUID.style.color = "white";
 }
-
 let htmlFindUID = `
 <h3>Tìm UID Facebook từ link Facebook</h3>
+<div class="load" id="loading-data" style="display: none">
+                            <img src="./img/loading-23.gif">
+                        </div>
 <p class="P_desktop">Bằng cách nhập dữ liệu trên hệ thống tìm kiếm của chúng tôi, bạn đã đồng ý
                             với <a style="text-decoration: none;color: rgb(32, 32, 250);"
                                 href="https://atpsoftware.vn/dieu-khoan-su-dung.html">Điều khoản sử dụng</a>
                             và <a style="text-decoration: none;color:rgb(32, 32, 250);"
                                 href="https://atpsoftware.vn/chinh-sach-bao-mat.html">Chính sách bảo mật</a>
                             của chúng tôi.</p>
-<p class="P_mobile" style="font-weight: 600;">Nhập link facebook bạn muốn tra cứu UID vào đây:</p>
+<p class="P_mobile" style="font-weight: 600;">Nhập link Facebook bạn muốn tra cứu UID vào đây:</p>
 <form>
     <input type="text" placeholder="https://www.facebook.com/username">
-    <button class="btnSubmit"><img style="width:20px;margin-right: 5px;"src="https://img.icons8.com/external-colours-bomsymbols-/91/000000/external-find-digital-design-colors-set-1-colours-bomsymbols--2.png"/>Tìm UID Facebook</button>
+    <button class="btnSubmit" type="submit" onclick="myFunction()"><img style="width:20px;margin-right: 5px;"src="https://img.icons8.com/external-colours-bomsymbols-/91/000000/external-find-digital-design-colors-set-1-colours-bomsymbols--2.png"/>Tìm UID Facebook</button>
     <p class="P_mobile">Bằng cách nhập dữ liệu trên hệ thống tìm kiếm của chúng tôi, bạn đã đồng ý
                             với <a style="text-decoration: none;color: rgb(32, 32, 250);"
                                 href="https://atpsoftware.vn/dieu-khoan-su-dung.html">Điều khoản sử dụng</a>
@@ -65,7 +133,6 @@ let htmlFindUID = `
     <li>&#8226; https://www.facebook.com/profile.php?id=1000000025812613</li>
 </ul>
 `
-
 let htmlFindFBfromPhone = `
 <h3>Tìm Facebook từ số điện thoại</h3>
 <p class="P_desktop">Bằng cách nhập dữ liệu trên hệ thống tìm kiếm của chúng tôi, bạn đã đồng ý
